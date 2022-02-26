@@ -1,8 +1,8 @@
-export interface Post {
+export interface Comment {
     id: number;
     userId: number;
+    postId: number;
     created : Date;
-    title: string;
     body: string;
     likes: number;
     dislikes: number;

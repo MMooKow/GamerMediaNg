@@ -1,0 +1,81 @@
+
+{
+    "posts": [
+      {
+        "id": 1,
+        "userId": 1,
+        "created": "2021/01/25",
+        "title": "Microtransactions taking over games",
+        "body": "Too many microtransactions in games.",
+        "likes": 5,
+        "dislikes": 3      
+    },
+      {
+        "id": 2,
+        "userId": 2,
+        "created": "2021/6/17",
+        "title": "Why we need more microtransactions in games",
+        "body": "There is not enough money being spent. We need to spend more money.",
+        "likes": 6,
+        "dislikes": 20  
+      },
+      {
+        "id": 3,
+        "userId": 3,
+        "created": "2021/12/03",
+        "title": "Best Games of the Year",
+        "body": "1: Resident Evil Village, 2: Psyconauts 2, 3: Back 4 Blood, 4: Mass Effect LEgendary Edition, 5: It Takes Two",
+        "likes": 45,
+        "dislikes": 20  
+      }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "userId": 2,
+            "postId": 1,
+            "created": "2021/01/25",
+            "body": "I agree. Too many",
+            "likes": 4,
+            "dislikes": 2 
+        },
+        {
+            "id": 2,
+            "userId": 3,
+            "postId": 1,
+            "created": "2021/06/19",
+            "body": "I feel like there shoud be more actually",
+            "likes": 2,
+            "dislikes": 4 
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "postId": 2,
+            "created": "2021/01/25",
+            "body": "I agree. Too many",
+            "likes": 4,
+            "dislikes": 2 
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Frank",
+            "lastName": "Perez",
+            "username": "FreakyFrank"
+        },
+        {
+            "id": 2,
+            "firstName": "John",
+            "lastName": "Johnson",
+            "username": "JohnPlaysGames"
+        },
+        {
+            "id": 3,
+            "firstName": "Bob",
+            "lastName": "McMicro",
+            "username": "MicroTransactionBob"
+        }
+    ]
+  }

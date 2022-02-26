@@ -1,0 +1,12 @@
+.comment {
+    background: #9e9c9c;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  } 
+  
+  .comment h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

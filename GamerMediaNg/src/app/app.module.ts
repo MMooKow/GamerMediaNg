@@ -6,17 +6,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostItemComponent } from './components/post-item/post-item.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentItemComponent } from './components/comment-item/comment-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    PostItemComponent
+    PostItemComponent,
+    HeaderComponent,
+    NavBarComponent,
+    CommentsComponent,
+    CommentItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

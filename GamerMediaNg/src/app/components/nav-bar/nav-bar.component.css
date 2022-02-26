@@ -1,0 +1,12 @@
+li {
+    list-style-type: none;
+    justify-content: right;
+    display: inline;
+    align-items: end;
+    margin: 10em
+}
+
+.navbar{
+    border-bottom-style: solid;
+    
+}

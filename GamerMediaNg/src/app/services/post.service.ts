@@ -7,11 +7,12 @@ import { Post } from '../Posts';
   providedIn: 'root'
 })
 export class PostService {
-  apiUrl = 'https://localhost:44322/api/posts';
+  apiUrl: string = 'https://localhost:44322/api/posts';
+  jsonUrl: string = 'http://localhost:5000/posts';
 
   constructor(private http: HttpClient) {}
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.apiUrl);
+    return this.http.get<Post[]>(this.jsonUrl);
   }
 }
