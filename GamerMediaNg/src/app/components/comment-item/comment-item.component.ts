@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/app/Posts';
+import { Component, OnInit, Input} from '@angular/core';
 import { Comment } from '../../Comment';
 
 @Component({
@@ -8,13 +7,20 @@ import { Comment } from '../../Comment';
   styleUrls: ['./comment-item.component.css']
 })
 export class CommentItemComponent implements OnInit {
-
   @Input() comment: Comment;
-  @Input() post: Post;
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  incrementLikes() {
+    this.comment.likes++;
+    // add logic to stop both like and dislike on one account. posible database parameter toa dd
+  }
+
+  incrementDislikes() {
+    this.comment.dislikes++;
   }
 
 }

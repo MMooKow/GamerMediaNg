@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/app/Posts';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Post } from '../../Posts';
 import { CommentService } from 'src/app/services/comment.service';
 import { Comment } from '../../Comment'
 
@@ -11,6 +11,7 @@ import { Comment } from '../../Comment'
 export class CommentsComponent implements OnInit {
   @Input() post: Post;
 
+
   comments: Comment[] = [];
 
   constructor(private commentService: CommentService) { }
@@ -18,6 +19,7 @@ export class CommentsComponent implements OnInit {
   ngOnInit(): void {
     this.commentService.getComments().subscribe((comments) => this.comments = comments );
   }
+
 
 
 }

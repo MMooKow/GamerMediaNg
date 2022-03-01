@@ -11,6 +11,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommentsComponent } from './components/comments/comments.component';
 import { CommentItemComponent } from './components/comment-item/comment-item.component';
+import { HomeComponent } from './components/home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { CommentItemComponent } from './components/comment-item/comment-item.com
     NavBarComponent,
     CommentsComponent,
     CommentItemComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
