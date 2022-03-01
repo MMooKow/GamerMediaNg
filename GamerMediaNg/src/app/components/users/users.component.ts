@@ -17,5 +17,9 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe((users) => this.users = users );
   }
 
+  delistUser(user: User) {
+    this.userService.delistUser(user).subscribe(() => this.users = this.users.filter(u => u.id !== user.id) );
+  }
+
 
 }

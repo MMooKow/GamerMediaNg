@@ -1,1 +1,1 @@
-<app-user-item *ngFor="let user of users" [user]="user"></app-user-item>
+<app-user-item *ngFor="let user of users" [user]="user" (onClickDelistUser)="delistUser(user)"></app-user-item>

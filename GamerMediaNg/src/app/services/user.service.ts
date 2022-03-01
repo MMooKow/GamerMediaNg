@@ -13,6 +13,10 @@ export class UserService {
   constructor(private httpClient: HttpClient) { }
 
   getUsers(): Observable<User[]> {
-    return this.httpClient.get<User[]>(this.jsonUrl);
+    return this.httpClient.get<User[]>(this.apiUrl);
+  }
+
+  delistUser(user: User): Observable<User[]> {
+    return this.httpClient.patch<User[]>(`${this.apiUrl}/${user.id}`, user, { responseType: 'json' });
   }
 }

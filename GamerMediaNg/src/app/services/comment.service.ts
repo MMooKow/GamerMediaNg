@@ -14,6 +14,6 @@ export class CommentService {
   constructor(private http: HttpClient) { }
 
   getComments(): Observable<Comment[]> {
-    return this.http.get<Comment[]>(this.jsonUrl);
+    return this.http.get<Comment[]>(this.apiUrl);
   }
 }
