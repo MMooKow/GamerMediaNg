@@ -13,6 +13,8 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { CommentItemComponent } from './components/comment-item/comment-item.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UsersComponent } from './components/users/users.component';
+import { UserItemComponent } from './components/user-item/user-item.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommentsComponent,
     CommentItemComponent,
     HomeComponent,
+    UsersComponent,
+    UserItemComponent,
   ],
   imports: [
     BrowserModule,

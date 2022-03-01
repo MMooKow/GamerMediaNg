@@ -6,4 +6,5 @@ export interface Post {
     body: string;
     likes: number;
     dislikes: number;
+    isActive: boolean;
 }

@@ -6,4 +6,5 @@ export interface Comment {
     body: string;
     likes: number;
     dislikes: number;
+    isActive: boolean;
 }
